@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS CRUD using Ui-Router in PHP/MySQLi</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1 class="page-header text-center">AngularJS CRUD using Ui-Router in PHP/MySQLi</h1>
+    <div ui-view></div>
+</div>
+<!-- main script -->
+<script src="js/app.js"></script>
+<!-- controllers -->
+<script src="js/controllers/homeController.js"></script>
+<script src="js/controllers/addController.js"></script>
+<script src="js/controllers/editController.js"></script>
+<script src="js/controllers/deleteController.js"></script>
+<!-- services -->
+<script src="js/services/memberService.js"></script>
+</body>
+</html>

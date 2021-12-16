@@ -1,0 +1,26 @@
+<div class="row" ng-init="fetch()">
+	<div class="col-md-8 col-md-offset-2">
+		<button href="" class="btn btn-primary" ui-sref="add"><i class="fa fa-plus"></i> Add New</button>	
+		<table class="table table-bordered table-striped" style="margin-top:10px;">
+			<thead>
+                <tr>
+                    <th>Firstname</th>
+                   	<th>Lastname</th>
+                    <th>Address</th>
+                   	<th>Action</th>
+                </tr>
+            </thead>
+			<tbody>
+				<tr ng-repeat="member in members">
+					<td>{{ member.firstname }}</td>
+					<td>{{ member.lastname }}</td>
+					<td>{{ member.address }}</td>
+					<td>
+						<button type="button" class="btn btn-success" ui-sref="edit({member: member})"><i class="fa fa-edit"></i> Edit</button> 
+						<button type="button" class="btn btn-danger" ui-sref="delete({member: member})"> <i class="fa fa-trash"></i> Delete</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

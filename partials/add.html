@@ -1,0 +1,27 @@
+<div class="row">
+	<div class="col-sm-4 col-sm-offset-4">
+		<div class="alert alert-danger text-center" ng-show="error">
+			<button type="button" class="close" ng-click="clear()"><span aria-hidden="true">&times;</span></button>
+			<i class="fa fa-warning"></i> {{ message }}
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<h3 class="text-center">Add Form</h3>
+				<div class="form-group">
+					<label>Firstname:</label>
+					<input type="text" class="form-control" ng-model="member.firstname">
+				</div>
+				<div class="form-group">
+					<label>Lastname:</label>
+					<input type="text" class="form-control" ng-model="member.lastname">
+				</div>
+				<div class="form-group">
+					<label>Address:</label>
+					<input type="text" class="form-control" ng-model="member.address">
+				</div>
+				<button type="button" class="btn btn-primary" ng-click="add()"><i class="fa fa-save"></i> Save</button>
+				<button type="button" class="btn btn-default pull-right" ui-sref="home"><i class="fa fa-arrow-left"></i> Back</button>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,17 @@
+<div class="row">
+	<div class="col-sm-4 col-sm-offset-4">
+		<div class="alert alert-danger text-center" ng-show="error">
+			<button type="button" class="close" ng-click="clear()"><span aria-hidden="true">&times;</span></button>
+			<i class="fa fa-warning"></i> {{ message }}
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<h4 class="text-center">Are you sure you want to delete</h4>
+				<h3 class="text-center">{{ deletemember.firstname + ' ' + deletemember.lastname }}</h3><br>
+				<button type="button" class="btn btn-danger" ng-click="delete()"><i class="fa fa-trash"></i> Update</button>
+				<button type="button" class="btn btn-default pull-right" ui-sref="home"><i class="fa fa-arrow-left"></i> Back</button>
+			</div>
+		</div>
+
+	</div>
+</div>
